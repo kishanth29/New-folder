@@ -6,10 +6,11 @@ const ProductRoute = require("./routes/Products");
 const errorHandler = require('./utilities/errorHandle')
 const cors = require('cors');
 app.use(express.json());
+require('dotenv').config();
 
 // Database connection
 mongoose
-  .connect("mongodb://localhost:27017/intern", {
+  .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
