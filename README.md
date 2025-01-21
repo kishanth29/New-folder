@@ -100,10 +100,10 @@ Follow these steps to set up and run the backend application:
 
    ```env
    PORT=5000
-   MONGODB_URI=<your_mongodb_connection_string>
+   MONGODB_URI=mongodb://localhost:27017/intern
    ```
 
-   Replace `<your_mongodb_connection_string>` with your actual MongoDB URI, either local or from MongoDB Atlas.
+   Replace `MONGODB_URI=mongodb://localhost:27017/intern` with your actual MongoDB URI, either local or from MongoDB Atlas.
 
 ## Running the Application
 
