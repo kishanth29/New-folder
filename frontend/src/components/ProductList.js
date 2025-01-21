@@ -159,7 +159,7 @@ const ProductList = () => {
                     Edit
                   </button>
                   <button
-                    className="btn btn-primary me-2"
+                    className="btn btn-info text-white me-2"
                     onClick={() => handleShow(product)}
                   >
                     Show
