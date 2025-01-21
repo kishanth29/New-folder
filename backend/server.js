@@ -3,7 +3,8 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const mongoose = require("mongoose");
 const ProductRoute = require("./routes/Products");
-
+const errorHandler = require('./utilities/errorHandle')
+const cors = require('cors');
 app.use(express.json());
 
 // Database connection
@@ -18,8 +19,12 @@ mongoose
   .catch((error) => {
     console.log(error);
   });
-
+app.use(cors());
 app.use("/products", ProductRoute);
+
+// error handler middleware
+app.use(errorHandler);
+
 
 // Start the server
 app.listen(PORT, () => {
