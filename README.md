@@ -15,7 +15,7 @@ Follow these steps to get the frontend application up and running:
 1. **Clone the repository**:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/kishanth29/New-folder.git
    ```
 
 2. **Navigate to the frontend directory**:
