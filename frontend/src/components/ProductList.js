@@ -132,7 +132,7 @@ const ProductList = () => {
           </button>
         </div>
         {/* second componenet */}
-        <table className="table">
+        <table className="table table-striped">
           <thead>
             <tr>
               <th>Created At</th>
